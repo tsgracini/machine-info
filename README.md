@@ -1,2 +1,26 @@
 # machine-info
-Scritpt to list information about a linux machine.
+Script que lista informações da máquina, abaixo pode-se
+ver um exemplo de como será a saída do mesmo:
+
+===============================================================
+Relatório da Máquina: debian
+Data/Hora: sáb nov 21 16:12:58 -03 2020
+===============================================================
+
+Máquina ativa desde: 2020-11-16 08:30:01
+
+Versão do Kernel: 4.19.0-12-amd64
+
+CPUs:
+Quantidade de CPUs/Core: 8
+Modelo da CPU:  Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz
+
+Memória Total: 7851 MB
+
+Partições:
+Sist. Arq.      Tam. Usado Disp. Uso% Montado em
+/dev/sda3        46G   22G   22G  50% /
+/dev/sda4       166G   73G   85G  47% /home
+/dev/sda1       140M  5,1M  135M   4% /boot/efi
+
+===============================================================

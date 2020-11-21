@@ -2,7 +2,7 @@
 
 ##########################################################
 #							 #
-# Relatorio-2.sh - Exibe informações da máquina.	 #
+# MachineInfo.sh - Exibe informações da máquina.	 #
 #							 #
 # Autor: Thiago Gracini <tsgracini@outlook.com>		 #
 # Data Criação: 21/11/2020				 #
@@ -13,7 +13,7 @@
 #            de CPU's, memória total, versão do		 #
 #            kernel e partições.			 #
 #							 #
-# Exemplo de uso: ./Relatorio-2.sh			 #
+# Exemplo de uso: ./MachineInfo.sh			 #
 #							 #
 ##########################################################
 
@@ -21,7 +21,7 @@ HOSTNAME=$(hostname)
 QTDECPU=$(grep -c "processor" /proc/cpuinfo)
 MODELOCPU=$(grep "model name" /proc/cpuinfo | cut -d":" -f2 | head -n1)
 MEMORIA=$(free -m | grep "Mem" | tr -s " " | cut -d" " -f2)
-PARTICOES=$(df -h | grep -E '(hd[a-z]|sd[a-z]|Sist\.)')
+PARTICOES=$(df -h | egrep -v '(tmpfs|udev)')
 KERNEL=$(uname -r)
 UPTIME=$(uptime -s)
 
