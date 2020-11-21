@@ -1,10 +1,9 @@
 # machine-info
 Script que lista informações da máquina, abaixo pode-se
 ver um exemplo de como será a saída do mesmo:
-
-===============================================================
+[H[2J[3J===============================================================
 Relatório da Máquina: debian
-Data/Hora: sáb nov 21 16:12:58 -03 2020
+Data/Hora: sáb nov 21 16:27:37 -03 2020
 ===============================================================
 
 Máquina ativa desde: 2020-11-16 08:30:01
