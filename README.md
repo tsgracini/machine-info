@@ -26,3 +26,8 @@ Sist. Arq.      Tam. Usado Disp. Uso% Montado em
 /dev/sda1       140M  5,1M  135M   4% /boot/efi
 
 ===============================================================
+
+> Esse é um bloco de citação.
+> Ele pode ter várias linhas por parágrafo.
+>
+> Inclusive, dando um espaço, você tem um novo parágrafo.
