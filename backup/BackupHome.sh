@@ -56,7 +56,7 @@ then
 fi
 
 ARQUIVO="backup_home_$(date +%Y%m%d%H%M).tgz"
-tar zcf $DIRDEST/$ARQUIVO $HOME 2> /dev/null
+tar zcvpf $DIRDEST/$ARQUIVO --absolute-names --exclude="$DIRDEST" "$HOME"/* > /dev/null
 
 echo "Criando Backup..."
 echo ""
